@@ -3,9 +3,10 @@ Jared Endicott
 Tuesday, March 14, 2017  
 
 <div style="width:450px; height=300px">
-<img src="https://raw.githubusercontent.com/RealizingFutures/UnemploymentAndLaborForceParticipation/gh-pages/UnemploymentAndLaborForceParticipation_files/figure-html/iStock_LookingForJob.jpg">
+<img src="https://raw.githubusercontent.com/RealizingFutures/MarchMadness2017/gh-pages/MarchMadnessAndPredictiveAnlytics_files/figure-html/iStock-MarchMadness.jpg">
 </div>
 <br>
+
 
 
 ### From March Apathy to March Madness
@@ -587,7 +588,7 @@ This model uses the following parameters:
 
 ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-18-1.png) 
 
-#### Simulate 2017 Bracket 13 through 24
+#### Simulate 2017 Brackets 13 through 24
 
 There is a parameter that can be passed to the SimulateMarchMadness function which I have not talked about. It is the coinFlip parameter, and it allows me to override the normal rankings and choose random outcomes to each game, as if I were flipping a coin. This feature gives me the ability to create random brackets to act as controls to compare the brackets chosen by the predictive analytics method. This will tell us how well the algorithm for ranking teams performs against random chance, where hopefully it performs much better. Below are my next 12 brackets chosen using a coin clip simulation.
 
