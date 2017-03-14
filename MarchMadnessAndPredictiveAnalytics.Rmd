@@ -48,6 +48,7 @@ The R function below may not be too pretty, but it gets the jobs done and return
 library(dplyr)
 library(reshape2)
 library(MASS)
+library(TeachingDemos)
 
 set.seed(1199)
 
@@ -625,7 +626,8 @@ MarchMadnessBracket <- function(mySim, myYear){
         
         
         label = paste('NCAA\nMARCH MADNESS\n', myYear, sep = '')
-        text(x0 + 5, 300, labels = label, offset = 0, pos = 1, cex = 1, col = 'darkorange')
+        #text(x0 + 5, 300, labels = label, offset = 0, pos = 1, cex = 1, col = 'darkorange')
+        shadowtext(x0 + 5, y = 300, labels = label, col = 'darkorange', bg = 'black')
         
 
 }
@@ -695,8 +697,6 @@ Since I've already demonstrated the R code for running and visualizing a simulat
 
 #### Ranking Model Simulation 1
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -733,8 +733,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 1', sep = ''))
 
 #### Ranking Model Simulation 2
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 17
  * Away/Neutral Game Weight = 1
@@ -770,8 +768,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 2', sep = ''))
 
 #### Ranking Model Simulation 3
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 17
  * Away/Neutral Game Weight = 2
@@ -806,8 +802,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 3', sep = ''))
 ```
 
 #### Ranking Model Simulation 4
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -845,8 +839,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 4', sep = ''))
 
 #### Ranking Model Simulation 5
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -881,8 +873,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 5', sep = ''))
 ```
 
 #### Ranking Model Simulation 6
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -919,8 +909,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 6', sep = ''))
 
 #### Ranking Model Simulation 7
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -955,8 +943,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 7', sep = ''))
 ```
 
 #### Ranking Model Simulation 8
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -993,8 +979,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 8', sep = ''))
 
 #### Ranking Model Simulation 9
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -1029,8 +1013,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 9', sep = ''))
 ```
 
 #### Ranking Model Simulation 10
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -1067,8 +1049,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 10', sep = ''))
 
 #### Ranking Model Simulation 11
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -1103,8 +1083,6 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 11', sep = ''))
 ```
 
 #### Ranking Model Simulation 12
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100

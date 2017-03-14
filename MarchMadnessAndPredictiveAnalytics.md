@@ -41,6 +41,7 @@ The R function below may not be too pretty, but it gets the jobs done and return
 library(dplyr)
 library(reshape2)
 library(MASS)
+library(TeachingDemos)
 
 set.seed(1199)
 ```
@@ -408,8 +409,6 @@ Since I've already demonstrated the R code for running and visualizing a simulat
 
 #### Ranking Model Simulation 1
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -424,8 +423,6 @@ This model uses the following parameters:
 
 #### Ranking Model Simulation 2
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 17
  * Away/Neutral Game Weight = 1
@@ -439,8 +436,6 @@ This model uses the following parameters:
 
 #### Ranking Model Simulation 3
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 17
  * Away/Neutral Game Weight = 2
@@ -453,8 +448,6 @@ This model uses the following parameters:
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-9-1.png) 
 
 #### Ranking Model Simulation 4
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -470,8 +463,6 @@ This model uses the following parameters:
 
 #### Ranking Model Simulation 5
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -484,8 +475,6 @@ This model uses the following parameters:
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-11-1.png) 
 
 #### Ranking Model Simulation 6
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -500,8 +489,6 @@ This model uses the following parameters:
 
 #### Ranking Model Simulation 7
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -514,8 +501,6 @@ This model uses the following parameters:
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-13-1.png) 
 
 #### Ranking Model Simulation 8
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -530,8 +515,6 @@ This model uses the following parameters:
 
 #### Ranking Model Simulation 9
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -544,8 +527,6 @@ This model uses the following parameters:
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-15-1.png) 
 
 #### Ranking Model Simulation 10
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
@@ -560,8 +541,6 @@ This model uses the following parameters:
 
 #### Ranking Model Simulation 11
 
-This model uses the following parameters:
-
  * Year = 2017
  * Score Cap = 100
  * Away/Neutral Game Weight = 1
@@ -574,8 +553,6 @@ This model uses the following parameters:
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-17-1.png) 
 
 #### Ranking Model Simulation 12
-
-This model uses the following parameters:
 
  * Year = 2017
  * Score Cap = 100
