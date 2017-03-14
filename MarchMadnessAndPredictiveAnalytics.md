@@ -23,7 +23,7 @@ The data for this analysis was made available by **Kaggle** in the form of CSVs.
 
 ### Calculate NCAA Rankings
 
-I used R, a preferred language for data scientists, to write a function that will calculate NCAA basketball team rankings using the Massey Method as explained by Professor Chartier. This algorithm follows this general recipe for calculating the rankings using a linear system:
+I used R, a preferred language for data scientists, to write a function that will calculate NCAA Division I Men's Basketball team rankings using the Massey Method as explained by Professor Chartier. This algorithm follows this general recipe for calculating the rankings using a linear system:
 
 1) Calculate each team's net point differential from the regular season games and save these in a vector (V).
 2) Calculate a winning team by losing team matrix (M) that has the amount of games each team has played as well as a multiple of -1 for each matchup between two given teams.
