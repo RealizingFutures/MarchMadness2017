@@ -1141,7 +1141,7 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 12', sep = ''))
 
 ```
 
-#### Simulate 2017 Brackets 13 through 24 Using Coin Flips
+#### Simulate 2017 Brackets 13 Through 24 Using Coin Flips
 
 For the next set of simulations I will be overriding the normal ranking model and use a coin flip method for choosing winners. This feature gives me the ability to create random brackets to act as controls to compare the brackets chosen by the predictive analytics method. This will tell us how well the algorithm for ranking teams performs against random chance, where hopefully it performs much better. Below are my next 12 brackets chosen using a coin clip simulation.
 
