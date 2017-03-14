@@ -3,7 +3,7 @@ Jared Endicott
 Tuesday, March 14, 2017  
 
 <div style="width:450px; height=300px">
-<img src="https://raw.githubusercontent.com/RealizingFutures/MarchMadness2017/gh-pages/MarchMadnessAndPredictiveAnlytics_files/figure-html/iStock-MarchMadness.jpg">
+<img src="https://raw.githubusercontent.com/RealizingFutures/MarchMadness2017/gh-pages/MarchMadnessAndPredictiveAnalytics_files/figure-html/iStock-MarchMadness.jpg">
 </div>
 <br>
 
@@ -372,7 +372,7 @@ sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 MarchMadnessBracket(sim, parYear)
 ```
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-5-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-5-1.png) 
 
 For 2015 I scored fairly well, with 1080 points out of a possible 1920 under ESPNs Tournament Challenge scoring system. For the Final Four, this simulation predicted three of the teams, but in the championship game the model forecast Kentucky to win over Duke, while in reality Duke won over Wisconsin. Let's see how the model performs for 2016, but this time I will cap the score at 17. 
 
@@ -398,7 +398,7 @@ sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 MarchMadnessBracket(sim, parYear)
 ```
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-6-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-6-1.png) 
 
 My score was even better for 2016, with 1170 out of 1920. While I only had two of the Final Four selected correctly, I predicted the championship matchup of Villanova versus North Carolina. However, my model picked North Carolina to win, but they were in fact defeated by Villanova. Next we will move on to simulating the 2017 tournament brackets.
 
@@ -420,7 +420,7 @@ This model uses the following parameters:
  * Upsets = 0
 
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-7-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-7-1.png) 
 
 #### Ranking Model Simulation 2
 
@@ -435,7 +435,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 0
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-8-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-8-1.png) 
 
 #### Ranking Model Simulation 3
 
@@ -450,7 +450,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 4
  * Upsets = 0
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-9-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-9-1.png) 
 
 #### Ranking Model Simulation 4
 
@@ -465,7 +465,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-10-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-10-1.png) 
 
 
 #### Ranking Model Simulation 5
@@ -481,7 +481,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-11-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-11-1.png) 
 
 #### Ranking Model Simulation 6
 
@@ -496,7 +496,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-12-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-12-1.png) 
 
 #### Ranking Model Simulation 7
 
@@ -511,7 +511,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-13-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-13-1.png) 
 
 #### Ranking Model Simulation 8
 
@@ -526,7 +526,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-14-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-14-1.png) 
 
 #### Ranking Model Simulation 9
 
@@ -541,7 +541,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-15-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-15-1.png) 
 
 #### Ranking Model Simulation 10
 
@@ -556,7 +556,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-16-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-16-1.png) 
 
 #### Ranking Model Simulation 11
 
@@ -571,7 +571,7 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-17-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-17-1.png) 
 
 #### Ranking Model Simulation 12
 
@@ -586,14 +586,14 @@ This model uses the following parameters:
  * Q4 Games Weight = 1
  * Upsets = 10
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-18-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-18-1.png) 
 
 #### Simulate 2017 Brackets 13 through 24
 
 There is a parameter that can be passed to the SimulateMarchMadness function which I have not talked about. It is the coinFlip parameter, and it allows me to override the normal rankings and choose random outcomes to each game, as if I were flipping a coin. This feature gives me the ability to create random brackets to act as controls to compare the brackets chosen by the predictive analytics method. This will tell us how well the algorithm for ranking teams performs against random chance, where hopefully it performs much better. Below are my next 12 brackets chosen using a coin clip simulation.
 
 
-![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-1.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-2.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-3.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-4.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-5.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-6.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-7.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-8.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-9.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-10.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-11.png) ![](MarchMadnessAndPredictiveAnlytics_files/figure-html/unnamed-chunk-19-12.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-1.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-2.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-3.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-4.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-5.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-6.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-7.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-8.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-9.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-10.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-11.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-12.png) 
 
 
 ### We Are the Champions

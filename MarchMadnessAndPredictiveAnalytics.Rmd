@@ -10,7 +10,7 @@ output:
 ---
 
 <div style="width:450px; height=300px">
-<img src="https://raw.githubusercontent.com/RealizingFutures/MarchMadness2017/gh-pages/MarchMadnessAndPredictiveAnlytics_files/figure-html/iStock-MarchMadness.jpg">
+<img src="https://raw.githubusercontent.com/RealizingFutures/MarchMadness2017/gh-pages/MarchMadnessAndPredictiveAnalytics_files/figure-html/iStock-MarchMadness.jpg">
 </div>
 <br>
 
