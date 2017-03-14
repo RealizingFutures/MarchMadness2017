@@ -812,9 +812,9 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 3', sep = ''))
  * Score Cap = 100
  * Away/Neutral Game Weight = 4
  * Q1 Games Weight = 1
- * Q2 Games Weight = 2
- * Q3 Games Weight = 4
- * Q4 Games Weight = 8
+ * Q2 Games Weight = 4
+ * Q3 Games Weight = 16
+ * Q4 Games Weight = 64
  * Upsets = 6
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
@@ -1117,8 +1117,8 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 11', sep = ''))
 
 # set parameters
 parYear <- 2017
-parScoreCap <- 22
-parLocMod <- 1
+parScoreCap <- 100
+parLocMod <- 10
 parQ1Mod <- 1
 parQ2Mod <- 2
 parQ3Mod <- 4

@@ -451,9 +451,9 @@ Since I've already demonstrated the R code for running and visualizing a simulat
  * Score Cap = 100
  * Away/Neutral Game Weight = 4
  * Q1 Games Weight = 1
- * Q2 Games Weight = 2
- * Q3 Games Weight = 4
- * Q4 Games Weight = 8
+ * Q2 Games Weight = 4
+ * Q3 Games Weight = 16
+ * Q4 Games Weight = 64
  * Upsets = 6
 
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-10-1.png) 
