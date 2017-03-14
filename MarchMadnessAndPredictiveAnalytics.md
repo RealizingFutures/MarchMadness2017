@@ -33,7 +33,7 @@ I used R, a preferred language for data scientists, to write a function that wil
 
 For a more in depth understanding of the mathematical ideas behind this algorithm I suggest acquiring Professor Chartier's lectures on *Big Data* from The Great Courses.
 
-The R function below may not be too pretty, but it gets the jobs done and returns a list of rankings. There are various parameters that can be passed to the function. These parameters include the year to calculate the rankings for, a cap for each games point spread, a weight for away games, and weights for games played in different quarters of the season. There is also a parameter that will allow me to set a number of randomly chosen upsets in round 2, such that a lower ranked team will beat the higher ranked team in that game. These parameters allow for new rankings to be calculated very quickly under different scenarios.
+The R function below may not be too pretty, but it gets the jobs done and returns a list of rankings. There are various parameters that can be passed to the function. These parameters include the year to calculate the rankings for, a cap for each game's point spread, a weight for away games, and weights for games played in different quarters of the season. There is also a parameter that will allow me to set a number of randomly chosen upsets in round 1, such that a lower ranked team will beat the higher ranked team in that game. These parameters allow for new rankings to be calculated very quickly under different scenarios.
 
 
 ```r
@@ -42,6 +42,7 @@ library(dplyr)
 library(reshape2)
 library(MASS)
 library(TeachingDemos)
+library(png)
 ```
 
 
@@ -403,7 +404,7 @@ My score was even better for 2016, with 1170 out of 1920. While I only had two o
 
 ### Simulations for 2017
 
-Since I've already demonstrated the R code for running and visualizing a simulation, I will hide the R code from here on out and just display the bracket predictions. For 2017 I am going to submit my 25 allowable brackets to the ESPN Tournament Challenge. The first 12 of these brackets will be simulations using the ranking model with different parameters. The next 12 brackets will be coin flip simulations, where each matchup is given a 50/50 random chance, as if the winner were chosen by coin flip. The last remaining bracket will be chosen by wife Mary based on her own preferences. The first 12 are my model tests, while the next 12 are essentially controls. Presumably the model simulations should perform better than the coin flip simulations.
+Since I've already demonstrated the R code for running and visualizing a simulation, I will hide the R code from here on out and just display the bracket predictions. For 2017 I am going to submit my 25 allowable brackets to the ESPN Tournament Challenge. The first 12 of these brackets will be simulations using the ranking model with different parameters. The next 12 brackets will be coin flip simulations, where each matchup is given a 50/50 random chance. The last remaining bracket will be chosen by my wife Mary based on her own preferences. The first 12 are my model tests, while the next 12 are essentially controls. Presumably the model simulations should perform better than the coin flip simulations.
 
 #### Ranking Model Simulation 1
 
@@ -571,7 +572,7 @@ For the next set of simulations I will be overriding the normal ranking model an
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-1.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-2.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-3.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-4.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-5.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-6.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-7.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-8.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-9.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-10.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-11.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-19-12.png) 
 
 
-The brackets created by the ranking model show fairly stable outcomes under diverse parameter assumptions, with Gonzaga predicted to win it all in 9 out of 12 simulations. In the other 3 brackets, Kentucky wins twice and Wichita St wins once. There is more variation in the earlier rounds, with the Final Four matchups composed from combinations of 10 unique teams. The 64 second round games show the most diverse set of potential outcomes across the simulations, and likely this was influence a lot by the addition of the random upsets parameter. It makes sense that the ranking model would be fairly stable, especially when choosing the tournament champion, because the parameters allow for only limited variation in how the rankings are chosen and it will tend to be the case that the highest ranking teams maintain those positions under different parameter scenarios.
+The brackets created by the ranking model show fairly stable outcomes under diverse parameter assumptions, with Gonzaga predicted to win it all in 9 out of 12 simulations. In the other 3 brackets, Kentucky wins twice and Wichita St wins once. There is more variation in the earlier rounds, with the Final Four matchups composed from combinations of 10 unique teams. The 64 first round games show the most diverse set of potential outcomes across the simulations, and likely this was influence a lot by the addition of the random upsets parameter. It makes sense that the ranking model would be fairly stable, especially when choosing the tournament champion, because the parameters allow for only limited variation in how the rankings are chosen and it will tend to be the case that the highest ranking teams maintain those positions under different parameter scenarios.
 
 This is in stark contrast to the 12 coin flip models, which show significant diversity in the brackets that are simulated. The only team that comes out on top more than once is North Dakota, with the other 10 tournament simulations being split between Oklahoma St, S Dakota St, Villanova, New Mexico St, Butler, Michigan, Florida, Wake Forest, Notre Dame, and Kansas. Anything can happen when the winners and losers are determined by random chance. It will be really interesting to see how the ranking model brackets stack up against the coin flip brackets.
 
