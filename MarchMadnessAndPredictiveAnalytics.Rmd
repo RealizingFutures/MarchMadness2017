@@ -50,7 +50,7 @@ library(reshape2)
 library(MASS)
 library(TeachingDemos)
 
-set.seed(1199)
+
 
 ```
 
@@ -735,6 +735,118 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 1', sep = ''))
 #### Ranking Model Simulation 2
 
  * Year = 2017
+ * Score Cap = 100
+ * Away/Neutral Game Weight = 2
+ * Q1 Games Weight = 1
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 3
+ * Q4 Games Weight = 4
+ * Upsets = 0
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+
+# set parameters
+parYear <- 2017
+parScoreCap <- 100
+parLocMod <- 2
+parQ1Mod <- 1
+parQ2Mod <- 2
+parQ3Mod <- 3
+parQ4Mod <- 4
+parUpsets <- 0
+
+# get the rankings
+ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
+                           parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+# run the simulation
+sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
+
+# create the bracket visual
+MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 2', sep = ''))
+
+
+```
+
+#### Ranking Model Simulation 3
+
+ * Year = 2017
+ * Score Cap = 100
+ * Away/Neutral Game Weight = 4
+ * Q1 Games Weight = 1
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 2
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+
+# set parameters
+parYear <- 2017
+parScoreCap <- 100
+parLocMod <- 4
+parQ1Mod <- 1
+parQ2Mod <- 2
+parQ3Mod <- 4
+parQ4Mod <- 8
+parUpsets <- 2
+
+# get the rankings
+ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
+                           parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+
+set.seed(1111)
+
+# run the simulation
+sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
+
+# create the bracket visual
+MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 3', sep = ''))
+
+
+```
+
+#### Ranking Model Simulation 4
+
+ * Year = 2017
+ * Score Cap = 100
+ * Away/Neutral Game Weight = 4
+ * Q1 Games Weight = 1
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 6
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+
+# set parameters
+parYear <- 2017
+parScoreCap <- 100
+parLocMod <- 4
+parQ1Mod <- 1
+parQ2Mod <- 4
+parQ3Mod <- 16
+parQ4Mod <- 64
+parUpsets <- 6
+
+# get the rankings
+ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
+                           parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+
+set.seed(1122)
+
+# run the simulation
+sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
+
+# create the bracket visual
+MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 4', sep = ''))
+
+
+```
+
+
+#### Ranking Model Simulation 5
+
+ * Year = 2017
  * Score Cap = 17
  * Away/Neutral Game Weight = 1
  * Q1 Games Weight = 1
@@ -758,16 +870,18 @@ parUpsets <- 0
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
                            parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+
+
 # run the simulation
 sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 
 # create the bracket visual
-MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 2', sep = ''))
+MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 5', sep = ''))
 
 
 ```
 
-#### Ranking Model Simulation 3
+#### Ranking Model Simulation 6
 
  * Year = 2017
  * Score Cap = 17
@@ -793,112 +907,7 @@ parUpsets <- 0
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
                            parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
-# run the simulation
-sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 
-# create the bracket visual
-MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 3', sep = ''))
-
-
-```
-
-#### Ranking Model Simulation 4
-
- * Year = 2017
- * Score Cap = 17
- * Away/Neutral Game Weight = 3
- * Q1 Games Weight = 1
- * Q2 Games Weight = 2
- * Q3 Games Weight = 4
- * Q4 Games Weight = 8
- * Upsets = 2
-
-```{r, echo = FALSE, message=FALSE, warning=FALSE}
-
-# set parameters
-parYear <- 2017
-parScoreCap <- 100
-parLocMod <- 1
-parQ1Mod <- 1
-parQ2Mod <- 1
-parQ3Mod <- 1
-parQ4Mod <- 1
-parUpsets <- 10
-
-# get the rankings
-ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
-                           parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
-# run the simulation
-sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
-
-# create the bracket visual
-MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 4', sep = ''))
-
-
-```
-
-
-#### Ranking Model Simulation 5
-
- * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
- * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
-
-```{r, echo = FALSE, message=FALSE, warning=FALSE}
-
-# set parameters
-parYear <- 2017
-parScoreCap <- 100
-parLocMod <- 1
-parQ1Mod <- 1
-parQ2Mod <- 1
-parQ3Mod <- 1
-parQ4Mod <- 1
-parUpsets <- 10
-
-# get the rankings
-ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
-                           parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
-# run the simulation
-sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
-
-# create the bracket visual
-MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 5', sep = ''))
-
-
-```
-
-#### Ranking Model Simulation 6
-
- * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
- * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
-
-```{r, echo = FALSE, message=FALSE, warning=FALSE}
-
-# set parameters
-parYear <- 2017
-parScoreCap <- 100
-parLocMod <- 1
-parQ1Mod <- 1
-parQ2Mod <- 1
-parQ3Mod <- 1
-parQ4Mod <- 1
-parUpsets <- 10
-
-# get the rankings
-ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
-                           parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
 # run the simulation
 sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 
@@ -911,29 +920,32 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 6', sep = ''))
 #### Ranking Model Simulation 7
 
  * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Score Cap = 17
+ * Away/Neutral Game Weight = 4
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 2
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 
 # set parameters
 parYear <- 2017
-parScoreCap <- 100
-parLocMod <- 1
+parScoreCap <- 17
+parLocMod <- 4
 parQ1Mod <- 1
-parQ2Mod <- 1
-parQ3Mod <- 1
-parQ4Mod <- 1
-parUpsets <- 10
+parQ2Mod <- 2
+parQ3Mod <- 4
+parQ4Mod <- 8
+parUpsets <- 2
 
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
                            parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+
+set.seed(1133)
+
 # run the simulation
 sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 
@@ -946,29 +958,32 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 7', sep = ''))
 #### Ranking Model Simulation 8
 
  * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Score Cap = 17
+ * Away/Neutral Game Weight = 4
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 4
+ * Q3 Games Weight = 16
+ * Q4 Games Weight = 64
+ * Upsets = 6
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 
 # set parameters
 parYear <- 2017
-parScoreCap <- 100
-parLocMod <- 1
+parScoreCap <- 17
+parLocMod <- 4
 parQ1Mod <- 1
-parQ2Mod <- 1
-parQ3Mod <- 1
-parQ4Mod <- 1
-parUpsets <- 10
+parQ2Mod <- 4
+parQ3Mod <- 16
+parQ4Mod <- 64
+parUpsets <- 6
 
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
                            parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+
+set.seed(1144)
+
 # run the simulation
 sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 
@@ -981,25 +996,25 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 8', sep = ''))
 #### Ranking Model Simulation 9
 
  * Year = 2017
- * Score Cap = 100
+ * Score Cap = 5
  * Away/Neutral Game Weight = 1
  * Q1 Games Weight = 1
  * Q2 Games Weight = 1
  * Q3 Games Weight = 1
  * Q4 Games Weight = 1
- * Upsets = 10
+ * Upsets = 0
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 
 # set parameters
 parYear <- 2017
-parScoreCap <- 100
+parScoreCap <- 5
 parLocMod <- 1
 parQ1Mod <- 1
 parQ2Mod <- 1
 parQ3Mod <- 1
 parQ4Mod <- 1
-parUpsets <- 10
+parUpsets <- 0
 
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
@@ -1016,25 +1031,25 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 9', sep = ''))
 #### Ranking Model Simulation 10
 
  * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Score Cap = 5
+ * Away/Neutral Game Weight = 2
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 0
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 
 # set parameters
 parYear <- 2017
-parScoreCap <- 100
-parLocMod <- 1
+parScoreCap <- 5
+parLocMod <- 2
 parQ1Mod <- 1
-parQ2Mod <- 1
-parQ3Mod <- 1
-parQ4Mod <- 1
-parUpsets <- 10
+parQ2Mod <- 2
+parQ3Mod <- 4
+parQ4Mod <- 8
+parUpsets <- 0
 
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
@@ -1057,7 +1072,7 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 10', sep = ''))
  * Q2 Games Weight = 1
  * Q3 Games Weight = 1
  * Q4 Games Weight = 1
- * Upsets = 10
+ * Upsets = 20
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 
@@ -1069,11 +1084,14 @@ parQ1Mod <- 1
 parQ2Mod <- 1
 parQ3Mod <- 1
 parQ4Mod <- 1
-parUpsets <- 10
+parUpsets <- 20
 
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
                            parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+
+set.seed(1155)
+
 # run the simulation
 sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 
@@ -1087,28 +1105,31 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 11', sep = ''))
 
  * Year = 2017
  * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Away/Neutral Game Weight = 10
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 6
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 
 # set parameters
 parYear <- 2017
-parScoreCap <- 100
+parScoreCap <- 22
 parLocMod <- 1
 parQ1Mod <- 1
-parQ2Mod <- 1
-parQ3Mod <- 1
-parQ4Mod <- 1
-parUpsets <- 10
+parQ2Mod <- 2
+parQ3Mod <- 4
+parQ4Mod <- 8
+parUpsets <- 6
 
 # get the rankings
 ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod, 
                            parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
+
+set.seed(1166)
+
 # run the simulation
 sim <- SimulateMarchMadness(ranks, parYear, parUpsets)
 
@@ -1142,6 +1163,10 @@ ranks <- GetNCAARankings(parYear, parScoreCap, parLocMod,
                            parQ1Mod, parQ2Mod, parQ3Mod, parQ4Mod)
 
 for(b in 1:12){
+        
+        
+        set.seed(as.numeric(paste(1199, b, 00, sep='')))
+        
         # run the simulation
         sim <- SimulateMarchMadness(ranks, parYear, parUpsets, parCoinFlip)
         

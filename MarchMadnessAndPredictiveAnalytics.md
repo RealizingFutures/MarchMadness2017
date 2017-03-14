@@ -42,8 +42,6 @@ library(dplyr)
 library(reshape2)
 library(MASS)
 library(TeachingDemos)
-
-set.seed(1199)
 ```
 
 
@@ -424,6 +422,46 @@ Since I've already demonstrated the R code for running and visualizing a simulat
 #### Ranking Model Simulation 2
 
  * Year = 2017
+ * Score Cap = 100
+ * Away/Neutral Game Weight = 2
+ * Q1 Games Weight = 1
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 3
+ * Q4 Games Weight = 4
+ * Upsets = 0
+
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-8-1.png) 
+
+#### Ranking Model Simulation 3
+
+ * Year = 2017
+ * Score Cap = 100
+ * Away/Neutral Game Weight = 4
+ * Q1 Games Weight = 1
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 2
+
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-9-1.png) 
+
+#### Ranking Model Simulation 4
+
+ * Year = 2017
+ * Score Cap = 100
+ * Away/Neutral Game Weight = 4
+ * Q1 Games Weight = 1
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 6
+
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-10-1.png) 
+
+
+#### Ranking Model Simulation 5
+
+ * Year = 2017
  * Score Cap = 17
  * Away/Neutral Game Weight = 1
  * Q1 Games Weight = 1
@@ -432,9 +470,9 @@ Since I've already demonstrated the R code for running and visualizing a simulat
  * Q4 Games Weight = 1
  * Upsets = 0
 
-![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-8-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-11-1.png) 
 
-#### Ranking Model Simulation 3
+#### Ranking Model Simulation 6
 
  * Year = 2017
  * Score Cap = 17
@@ -445,97 +483,57 @@ Since I've already demonstrated the R code for running and visualizing a simulat
  * Q4 Games Weight = 4
  * Upsets = 0
 
-![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-9-1.png) 
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-12-1.png) 
 
-#### Ranking Model Simulation 4
+#### Ranking Model Simulation 7
 
  * Year = 2017
  * Score Cap = 17
- * Away/Neutral Game Weight = 3
+ * Away/Neutral Game Weight = 4
  * Q1 Games Weight = 1
  * Q2 Games Weight = 2
  * Q3 Games Weight = 4
  * Q4 Games Weight = 8
  * Upsets = 2
 
-![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-10-1.png) 
-
-
-#### Ranking Model Simulation 5
-
- * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
- * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
-
-![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-11-1.png) 
-
-#### Ranking Model Simulation 6
-
- * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
- * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
-
-![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-12-1.png) 
-
-#### Ranking Model Simulation 7
-
- * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
- * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
-
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-13-1.png) 
 
 #### Ranking Model Simulation 8
 
  * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Score Cap = 17
+ * Away/Neutral Game Weight = 4
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 4
+ * Q3 Games Weight = 16
+ * Q4 Games Weight = 64
+ * Upsets = 6
 
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-14-1.png) 
 
 #### Ranking Model Simulation 9
 
  * Year = 2017
- * Score Cap = 100
+ * Score Cap = 5
  * Away/Neutral Game Weight = 1
  * Q1 Games Weight = 1
  * Q2 Games Weight = 1
  * Q3 Games Weight = 1
  * Q4 Games Weight = 1
- * Upsets = 10
+ * Upsets = 0
 
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-15-1.png) 
 
 #### Ranking Model Simulation 10
 
  * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Score Cap = 5
+ * Away/Neutral Game Weight = 2
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 0
 
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-16-1.png) 
 
@@ -548,7 +546,7 @@ Since I've already demonstrated the R code for running and visualizing a simulat
  * Q2 Games Weight = 1
  * Q3 Games Weight = 1
  * Q4 Games Weight = 1
- * Upsets = 10
+ * Upsets = 20
 
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-17-1.png) 
 
@@ -556,12 +554,12 @@ Since I've already demonstrated the R code for running and visualizing a simulat
 
  * Year = 2017
  * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Away/Neutral Game Weight = 10
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 6
 
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-18-1.png) 
 
