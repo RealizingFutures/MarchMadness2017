@@ -627,7 +627,8 @@ MarchMadnessBracket <- function(mySim, myYear){
         
         label = paste('NCAA\nMARCH MADNESS\n', myYear, sep = '')
         #text(x0 + 5, 300, labels = label, offset = 0, pos = 1, cex = 1, col = 'darkorange')
-        shadowtext(x0 + 5, y = 300, labels = label, col = 'darkorange', bg = 'black')
+        shadowtext(x0 + 5, y = 300, labels = label, col = 'darkorange'
+                   , bg = 'black', theta = seq(pi/4, 2 * pi, length.out = 20), r = 0.1, cex = 1.5)
         
 
 }
@@ -804,13 +805,13 @@ MarchMadnessBracket(sim, paste(parYear, '\nModel Simulation 3', sep = ''))
 #### Ranking Model Simulation 4
 
  * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Score Cap = 17
+ * Away/Neutral Game Weight = 3
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 2
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 

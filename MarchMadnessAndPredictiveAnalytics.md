@@ -450,13 +450,13 @@ Since I've already demonstrated the R code for running and visualizing a simulat
 #### Ranking Model Simulation 4
 
  * Year = 2017
- * Score Cap = 100
- * Away/Neutral Game Weight = 1
+ * Score Cap = 17
+ * Away/Neutral Game Weight = 3
  * Q1 Games Weight = 1
- * Q2 Games Weight = 1
- * Q3 Games Weight = 1
- * Q4 Games Weight = 1
- * Upsets = 10
+ * Q2 Games Weight = 2
+ * Q3 Games Weight = 4
+ * Q4 Games Weight = 8
+ * Upsets = 2
 
 ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-10-1.png) 
 
