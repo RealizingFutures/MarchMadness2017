@@ -43,6 +43,8 @@ library(reshape2)
 library(MASS)
 library(TeachingDemos)
 library(png)
+library(ggplot2)
+library(RColorBrewer)
 ```
 
 
@@ -579,9 +581,25 @@ This is in stark contrast to the 12 coin flip models, which show significant div
 
 ### We Are the Champions
 
-This is where I evalulate the success of these analytics methods for predicting March Madness brackets. So, more to come after the tournament is over.
+#### *Updated Sunday, April 9, 2017*
 
-Coming Soon...
+The 2017 NCAA Champions are the North Carolina Tar Heels, winning a hard fought victory over the Gonzaga Bulldogs. Where the typical sports commentator would discuss the game details, plays and players, I am interested in how our prediction model brackets scored in the ESPN Tournament Challenge.  Obviously, none of the twenty-four brackets I submitted to the ESPN Tournament Challenge correctly predicted that North Carolina would be the champions. However, nine out of twelve bracket simulations--specifically the ones built using the ranking model algorithm-had Gonzaga to win it. Given that Gonzaga had never before made it to the Final Four in NCAA history and that they ultimately came within seven points of being the champions, I would say that the ranking algorithm was successful at gleaning insight from the regular season games and applying that information to the prediction challenge. Recall that the ranking algorithm we used was the Massey Method, a technique that has been shown to be successful as this type of task in the past.
+
+The real test is how well predictive models performed against other predicters, such as brackets chosen by random coin flip, brackets chosen by experienced watchers of the tournament, or brackets chosen by other mathematical predictive models. The two bar charts below rank the scores for our twelve ranking model simulations and the twelve coin flip simulations respectively. As you can see the ranking model simulations, with an average score of 752, significantly outperformed the coin flips simulations, with an average score of 298. Also, there is no overlap in scoring range between these two types of simulations, with the higher ranking coin flip simulation scoring 410 versus the lowest scoring ranking model at 520 points. The highest scoring ranking model simulation was 920 and this is more than double the highest scoring coin flip model. These scores differences tell us that the predictive models performed much better than random chance, much better than guessing. See the stack ranked bar charts below to see the points for each of our brackets. 
+
+
+
+![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-20-1.png) ![](MarchMadnessAndPredictiveAnalytics_files/figure-html/unnamed-chunk-20-2.png) 
+
+
+
+To compare against other bracketologists we can use the information supplied by the ESPN Tournament Challenge smartphone app. The highest scoring bracket was Ranking Model Simulation 11, and with a score of 920 this was at the 80th percentile of all brackets submitted, which was about 19 million. Not bad. I'll take it, especially for a data science geek who knew nothing about the tournament beforehand. I know a lot now, so I won't be able to repeat this type of experiment again. If we consider the average ranking model bracket this puts the group at about the 62nd percentile, which is fairly modest overall. Incidentally the average score for the coin flip brackets is much lower at about the 3rd percentile, a fact that reinforces the idea that the tournament has elements that are predictable and not simply up to chance. 
+
+A couple of other high profile bracket prediction models that used math as the basis for the choices are <a href="http://www.geekwire.com/2017/want-avoid-busted-bracket-bing-predicts-march-madness-winners-way-title-game/" target="_blank">Bing Predicts</a> and <a href="https://projects.fivethirtyeight.com/2017-march-madness-predictions/" target="_blank">FiveThirtyEight.com</a>. Bing Predicts uses "intelligent machine-learning technology to analyze social and search signals, plus more than a decade of college hoops statistical data" in order to formulate forecasts for March Madness. The model used by FiveThirtyEight applies six different ranking systems, including their own Elo rankings, to determine the probabilities for each team winning the tournament. If we score the pre-tournament brackets built from these other predictive analytics methods, both models suggested Villanova would be the champ and--under the ESPN Tournament challenge rules--scored 600 and 720 for Bing Predicts and FiveThirtyEight respectively. With our ranking model simulations we score higher than those comparable predictive models, with an average of 752 points. A decent performance.
+
+
+Mathematically determined predictive models did not fair quite a well against experienced bracketologists who used their own judgment based on years of tournament watching. I submitted one of the ranking model brackets, specifically simulation model 5, to an ESPN group ran by my brother James. That bracket scored 860 points, but this placed it only fifth among nine entries. This hardly inspires bragging rights for that bracket. This indicates that domain knowledge is an important component of successful bracketology. This is not altogether surprising, as domain knowledge is an important factor in any data science endeavor. With an eyr toward improving the predictive accuracy for next year I will consider ways in which we might adapt some domain knowledge into our mathematical models.
+
 
 
 
